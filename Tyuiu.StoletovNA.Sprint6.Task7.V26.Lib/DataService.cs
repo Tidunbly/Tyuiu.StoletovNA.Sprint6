@@ -20,7 +20,10 @@ namespace Tyuiu.StoletovNA.Sprint6.Task7.V26.Lib {
                 {
                     arrayValues[r, c] = Convert.ToInt32(line_r[c]);
 
-                    
+                    if (c == 1 && arrayValues[r, c] > 5)
+                    {
+                        arrayValues[r, c] = 222;
+                    }
                 }
             }
 
