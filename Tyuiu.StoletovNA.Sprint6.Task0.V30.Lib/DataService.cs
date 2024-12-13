@@ -1,6 +1,5 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
-using tyuiu.cources.programming.interfaces.Sprint5;
 using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.StoletovNA.Sprint6.Task0.V30.Lib {
