@@ -1,6 +1,5 @@
-﻿using System;
-using Tyuiu.StoletovNA.Sprint6.Task1.V20.Lib;
-namespace Tyuiu.StoletovNA.Sprint6.Task1.V20.Test {
+﻿using Tyuiu.StoletovNA.Sprint6.Task2.V3.Lib;
+namespace Tyuiu.StoletovNA.Sprint6.Task2.V3.Test {
     [TestClass]
     public class DataServiceTest {
         [TestMethod]
@@ -10,9 +9,10 @@ namespace Tyuiu.StoletovNA.Sprint6.Task1.V20.Test {
             int start = -5;
             int end = 5;
             var res = ds.GetMassFunction(start, end);
-            double[] wait = new double[11] { -27.22, -22.25, -16.66, -11.04, -6.13, -3.00, 4.84, 8.86, 14.43, 20.18, 25.24 };
+            double[] wait = new double[11] { -12.18, 16.03, 18.87, 4.96, -9.99, -2, 2.16, -7.54, -22.76, -20.45, 7.77 };
 
             CollectionAssert.AreEqual(res, wait);
+
 
         }
     }
