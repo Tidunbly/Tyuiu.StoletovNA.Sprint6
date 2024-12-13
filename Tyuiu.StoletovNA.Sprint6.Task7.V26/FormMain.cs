@@ -62,7 +62,7 @@ namespace Tyuiu.StoletovNA.Sprint6.Task7.V26 {
         }
 
         private void buttonDone_Click(object sender, EventArgs e)
-        {
+        { 
 
             int[,] arrayValues = ds.GetMatrix(openFilePath);
 
