@@ -64,26 +64,17 @@ namespace Tyuiu.StoletovNA.Sprint6.Task7.V26 {
         private void buttonDone_Click(object sender, EventArgs e)
         {
 
-            int[,] arrayValues = new int[rows, cols];
+            int[,] arrayValues = ds.GetMatrix(openFilePath);
 
+            // Обновите массив arrayValues с изменениями
             for (int r = 0; r < rows; r++)
             {
                 for (int c = 0; c < cols; c++)
                 {
-                    // Читаем значения из dataGridIn
-                    arrayValues[r, c] = Convert.ToInt32(dataGridIn.Rows[r].Cells[c].Value);
-
-                    // Если значение положительное, больше 5, и находится во втором столбце
-                    if (c == 1 && arrayValues[r, c] > 5)
-                    {
-                        arrayValues[r, c] = 222; // Замена значения
-                    }
-
-                    // Записываем значение в dataGridOut
+                    // Передаем значения обратно в dataGridOut после изменения
                     dataGridOut.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
-
             buttonSaveFile.Enabled = true;
         }
 
