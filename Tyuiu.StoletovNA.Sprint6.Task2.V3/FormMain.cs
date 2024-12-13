@@ -13,7 +13,7 @@ namespace Tyuiu.StoletovNA.Sprint6.Task2.V3 {
 
         private void buttonInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 1 выполнил студент группы ИИПб-24-2 Столетов Никита Андреевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 2 выполнил студент группы ИИПб-24-2 Столетов Никита Андреевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void buttonDone_Click(object sender, EventArgs e)
